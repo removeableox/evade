@@ -10,7 +10,6 @@
 
 RenderWindow window;
 TextHandler text;
-Camera camera;
 Sounds sounds;
 
 int WIDTH = 900;
@@ -157,7 +156,6 @@ void gameLoop()
 	else
 	{
 		std::vector<std::vector<Entity>> allEntities = {tiles};
-		camera.cameraUpdate(allEntities);
 
 		if (frames<30) {frames++;}
 		int keys;
